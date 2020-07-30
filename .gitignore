@@ -1,5 +1,5 @@
-./node_modules
-./uploads
-./.env.*
-./user-guide
-./tmp
+node_modules/
+uploads/
+.env.*
+user_guide/
+tmp/
