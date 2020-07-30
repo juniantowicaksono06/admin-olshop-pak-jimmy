@@ -1,0 +1,47 @@
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    /* div#sidebarContainer  {
+        min-width: 100px;
+        width: 160px;
+        overflow: unset;
+    }
+
+    .sidebar-link {
+        width: 145px;
+        overflow: unset;
+    }
+
+    .sidebar-dropdown-content {
+        min-width: 200px;
+        margin: 0 !important;
+    }
+
+    .dropdown-caret {
+        display: none;
+    }
+
+    .link-title, .dropdown-title {
+        display: block;
+        font-size: 20px;
+        padding: 0 5px;
+        text-align: center;
+    }
+
+
+    .sidebar-dropdown-link > a, .sidebar-dropdown-link > span {
+        font-size: 14px;
+    }
+
+
+    .sidebar-dropdown-content {
+        position: absolute;
+        top: 0;
+        left: 160px;
+    }
+
+
+    .sidebar-link i {
+        font-size: 28px;
+        display: block;
+        margin: 0 auto !important;
+    } */
+}
