@@ -1,0 +1,20 @@
+.img-preview-list {
+    width: 100%;
+    overflow: hidden;
+}
+
+.img-list-box{
+    border: 1px solid darkgray;
+}
+
+.img-list-box img {
+    padding: 5px;
+}
+
+.img-list-box-active {
+    border: 1px solid orange !important;
+}
+
+.img-preview-container {
+    border: 1px solid black;
+}

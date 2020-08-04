@@ -34,7 +34,8 @@ class APP_Controller extends CI_Controller
         }
         else if($user_auth_token_session != "") {
             $data = [
-                'token' => $user_auth_token_session
+                'token' => $user_auth_token_session,
+                'expires' => 0
             ];
         }
         $db_user = $this->Auth_model->getAuthToken($data);

@@ -24,7 +24,7 @@ body, html {
 }
 
 #panelLoading {
-  position: absolute;
+  position: fixed;
   z-index: 99;
   min-height: 24px;
   left: 50%;
@@ -396,6 +396,27 @@ input[type=file]::-webkit-file-upload-button { /* chromes and blink button */
 /* Ubah foreground jadi warna merah saat element dihover */
 .hover-red:hover {
   color: rgb(194, 20, 20);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.bootstrap-select {
+  border: 1px solid darkgray;
+}
+
+.bootstrap-select button {
+  border-radius: 0;
+}
+
+.dropdown-menu.show {
+  padding: 0;
+  border-radius: 0;
+}
+
+abbr[title] {
+  cursor: pointer !important;
 }
 
 /* Akhir Misc Style */

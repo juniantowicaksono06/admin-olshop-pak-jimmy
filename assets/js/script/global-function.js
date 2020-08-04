@@ -31,11 +31,12 @@ function objectLength(obj) {
 }
 // Ambil parameter GET dari URL
 function getGETURLParameter(param) {
-    let t = "";
-    if(window.location.href.indexOf(param) != -1) {
-        t = window.location.href.split(param);
-    }
-    return t[t.length - 1];
+  let a = new URLSearchParams(window.location.search);
+  let tmp_val = a.get(param);
+  if(tmp_val == null || tmp_val == undefined) {
+    tmp_val = "";
+  }
+  return tmp_val;
 }
 
 

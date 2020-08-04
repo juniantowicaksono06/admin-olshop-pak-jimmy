@@ -45,7 +45,8 @@ class Auth_model extends APP_Model {
     }
 
     public function generateID($table_name) {
-        $id = randomString("", 13, "all");
+        // $id = randomString("", 13, "all");
+        $id = md5(time());
         $column_search = "";
         if($table_name == $this->_useradmin_table) {
             $column_search = "userid";

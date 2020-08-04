@@ -11,7 +11,7 @@
                                 <span><?= $total_category; ?></span>
                             </div>
                             <div class="font-md mt-4">
-                                <a href="" class="text-light no-underline">Lihat Detail <span class="float-right"><i class="fa fa-fw fa-arrow-right"></i></span></a>
+                                <a href="<?= base_url("kategori_produk/daftar_kategori_produk") ?>" class="text-light no-underline">Lihat Detail <span class="float-right"><i class="fa fa-fw fa-arrow-right"></i></span></a>
                             </div>
                         </div>
                     </div>
@@ -25,7 +25,7 @@
                                 <span><?= $total_sub_category; ?></span>
                             </div>
                             <div class="font-md mt-4">
-                                <a href="" class="text-light no-underline">Lihat Detail <span class="float-right"><i class="fa fa-fw fa-arrow-right"></i></span></a>
+                                <a href="<?= base_url("kategori_produk/daftar_kategori_produk") ?>" class="text-light no-underline">Lihat Detail <span class="float-right"><i class="fa fa-fw fa-arrow-right"></i></span></a>
                             </div>
                         </div>
                     </div>
@@ -39,7 +39,7 @@
                                 <span><?= $total_product; ?></span>
                             </div>
                             <div class="font-md mt-4">
-                                <a href="" class="text-light no-underline">Lihat Detail <span class="float-right"><i class="fa fa-fw fa-arrow-right"></i></span></a>
+                                <a href="<?= base_url("produk/daftar_produk") ?>" class="text-light no-underline">Lihat Detail <span class="float-right"><i class="fa fa-fw fa-arrow-right"></i></span></a>
                             </div>
                         </div>
                     </div>

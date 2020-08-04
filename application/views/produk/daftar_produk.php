@@ -7,10 +7,52 @@
                         <div class="card-body">
                             <h5 class="card-title"><?= $site_title ?></h5>
                             <div id="notificationMsg">
+                                <?= $this->session->flashdata("notifyMsgSuccess"); ?>
+                                <?= $this->session->flashdata("notifyMsgFailed"); ?>
                             </div>
                             <div class="product-option mb-3">
+                                <div class="my-2">
+                                    <a href="<?= base_url("produk/tambah_produk") ?>" class="btn btn-primary rounded-0"><i class="fa fa-fw fa-plus"></i> Tambah Produk</a>
+                                </div>
                                 <form action="<?= base_url('produk/daftar_produk') ?>" method="get" class="submit-get-form">
-                                    <div class="d-inline-flex w-100">
+                                    <div class="row">
+                                        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 mb-2">
+                                            <div>
+                                                <span style="font-size: 14px">Pilih Kategori</span>
+                                            </div>
+                                            <select name="id_subkategori_input" class="selectpicker w-100" id="" title="Silahkan Pilih Kategori" data-live-search="true">
+                                                <?= $category_list ?>
+                                            </select>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 mb-2">
+                                            <div>
+                                                <span style="font-size: 14px">Per Halaman</span>
+                                            </div>
+                                            <select name="per_page" class="selectpicker w-100" id="">
+                                                <?= $pagination_per_page; ?>
+                                            </select>
+                                        </div>
+                                        
+                                        <div class="col-12 mb-2">
+                                            <div>
+                                                <span style="font-size: 14px">Cari Produk</span>
+                                            </div>
+                                            <div class="input-group">
+                                                <input name="search_product_name" type="text" class="form-control rounded-0" value="<?= $search_product; ?>" placeholder="Cari Produk...">
+                                                <div class="input-append">
+                                                    <abbr title="Cari Produk">
+                                                        <button type="submit" class="btn btn-primary rounded-0"><i class="fa fa-fw fa-search"></i></button>
+                                                    </abbr>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <?php if(!empty($data_filter_found)): ?>
+                                        <div class="row mx-1 mb-2">
+                                            <span class="text-success total-rows-found"><?= $data_filter_found; ?></span>
+                                        </div>
+                                    <?php endif; ?>
+                                    <!-- <div class="d-inline-flex w-100">
                                             <select name="per_page" class="selectpicker mr-2" id="">
                                                 <?= $pagination_per_page; ?>
                                             </select>
@@ -27,7 +69,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                    </div>
+                                    </div> -->
                                 </form>
                             </div>
                             <div class="container-fluid">
@@ -103,7 +145,7 @@
                                         </div>
                                     </div> -->
                                 </div>
-                                <div class="mt-3">
+                                <div class="mt-3" id="paginationContainer">
                                     <?= $pagination; ?>
                                 </div>
                             </div>

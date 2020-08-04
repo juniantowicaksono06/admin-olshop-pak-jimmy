@@ -47,7 +47,7 @@ export const ConfirmationDialog = (function() {
         'setModalFooterButton': function(btnMsg, type = 'primary', append = false) {
             let answer = type == 'danger' ? "no" : "yes";
             let icon = type == 'danger' ? "ban" : "check";
-            let button = `<button class="btn btn-${type.toLowerCase()} btn-confirmation" data-answer="${answer}" data-dismiss="modal" aria-label="Close"><i class="fa fa-fw fa-${icon}"></i> ${btnMsg}</button>`;
+            let button = `<button class="btn btn-${type.toLowerCase()} btn-confirmation rounded-0" data-answer="${answer}" data-dismiss="modal" aria-label="Close"><i class="fa fa-fw fa-${icon}"></i> ${btnMsg}</button>`;
             // Cek apakah mau diappend atau replace?
             if(append) {
                 $('.modal-footer-confirmation').append(button);
